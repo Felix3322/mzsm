@@ -3,39 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <title>免责声明与使用协议</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-      background-color: #f8f8f8;
-      padding: 40px;
-      max-width: 960px;
-      margin: auto;
-      line-height: 1.9;
-      color: #222;
+    :root {
+      --bg-color: #f7f7f7;
+      --text-color: #222;
+      --border-color: #ddd;
+      --title-color: #111;
+      --warn-bg: #fff8dc;
+      --warn-border: #ffcc00;
     }
-    .disclaimer {
-      background: #fff;
-      border: 1px solid #ccc;
-      padding: 30px;
-      border-radius: 6px;
-      box-shadow: 0 0 12px rgba(0,0,0,0.06);
-      white-space: pre-wrap;
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #1e1e1e;
+        --text-color: #e5e5e5;
+        --border-color: #333;
+        --title-color: #fff;
+        --warn-bg: #3a3200;
+        --warn-border: #f9b300;
+      }
+    }
+    body {
+      margin: 0;
+      padding: 24px;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.75;
+    }
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--bg-color);
+    }
+    .header {
+      padding: 20px 0;
+      font-size: 1.75em;
+      font-weight: bold;
+      color: var(--title-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .section {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .section-title {
+      font-size: 1.25em;
+      font-weight: 600;
+      color: var(--title-color);
+      margin-bottom: 12px;
     }
     .notice {
       margin-top: 30px;
-      background: #fff3cd;
-      border-left: 6px solid #ffc107;
+      background: var(--warn-bg);
+      border-left: 6px solid var(--warn-border);
       padding: 16px;
       font-size: 0.95em;
+    }
+    .footer {
+      padding: 32px 0;
+      font-size: 0.85em;
+      color: #888;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="disclaimer">
-本人在此郑重声明：我所发表的一切文字、评论、观点、推理、假设、描述、比喻及任何其他表达，均仅代表我个人在特定时间、语境与极其有限认知水平下的个人思考，与任何组织、机构、平台、公司、媒体、政府部门或他人立场无关，亦不构成任何形式的官方表态、政策建议、法律咨询、专业指导或舆论参考。本人目前居住海外，仅为学习与个人发展，意图日后回国报效祖国，坚定拥护中国共产党领导，拥护国家统一、主权与法律制度，严格遵守中华人民共和国法律。本人能力、认知、表达极其有限，<strong>有可能存在笔误、错字、语病、上下文脱节、时间错位、逻辑跳跃、失焦比喻、信息遗漏等内容不完整或表达不准确的情况</strong>，如有疏漏错误，请您理解或无视，不应以此作为攻击、谴责、误读、引用依据。本人素质不高，<strong>可被视为素质低下亦无异议</strong>，且我确实具备人类常见所有缺点，包括但不限于冲动、情绪化、固执、偏见、精神波动、表达拙劣、判断失误、逻辑混乱、信息误读、口无遮拦、句式重复、用词不当等。本人精神状态不稳定，容易受到外界干扰、睡眠质量、压力与情绪影响，<strong>部分言论可能在极端情绪下表达，呈现“发癫”“失控”“语义模糊”等特征</strong>，这不具任何攻击、侮辱或传播意图，亦非理性思维输出，仅为一时非正常表达，请勿误解、误读或赋予其不应承载的含义。<strong>甚至不排除本人在特定环境下被迫、被诱导、在非自愿状态下发布或发表某些信息</strong>，若此类事件确属存在，在情况允许与安全前提下我将尽量澄清和说明，但本人无法保证每次都有能力及时更正、回应或解释，亦可能因不可抗力导致沉默或无回应。本人财务状况极差，无任何赔偿能力或经济补偿条件，<strong>若您因阅读、引用、转发、误用本内容导致任何后果，包括法律风险、名誉伤害、心理不适、人际冲突、平台处罚、经济损失等，本人不承担任何直接或间接责任</strong>。本人所发一切内容不构成建议，不应作为决策参考，<strong>不可被剪辑、演绎、组织传播、断章取义、设定标签、构建立场、引发争议</strong>，否则由此产生的所有连锁反应、后果、索赔、指控、声誉影响等，一概与本人无关。本人坚决反对网络暴力、群体攻击、错误引用、误导舆论与暴力解读，对任何扭曲我言论之行为保留不回应、屏蔽、自我保护及法律维权的权利。<strong>本人免责声明所述网页内容仅以本人通过 Cloudflare 托管的原始页面版本为官方有效版本</strong>，任何被转载、镜像、缓存、截取或在其他平台展示的版本均不具权威性，也不视为我正式发布。若您希望长期保留本协议，<strong>请在遵守 CC BY-NC-SA 4.0 协议前提下合法复制、存档、下载</strong>。本人指定页面字体为系统内置字体（system-ui, Arial 等），无任何商业版权字体。<strong>但由于浏览器行为、用户设备、插件干扰、脚本加载、CDN缓存错误或网络传输失真等不可抗力因素，页面渲染效果可能被替换为某些具有版权的第三方字体</strong>，此类问题由用户自行判断并承担解决责任，本人不对因字体显示或版权冲突承担任何责任或义务。此外，若本人言论托管或展示于某些具有独立用户协议、法律条款或社区规则的平台（如社交平台、论坛、内容网站等），<strong>则以本人免责声明与该平台协议中更严格的一方为准</strong>，平台如有强制约束条款，您需优先遵守该平台规定，若有冲突责任，平台方承担主体解释义务。<strong>如因语言能力、感官障碍、心理认知、智力理解或其他任何原因导致您无法完整阅读或理解本免责声明</strong>，建议您<strong>请教身边可信赖之他人，或使用可信赖之人工智能技术进行解读与说明</strong>，本人能力极为有限，无法为所有用户逐一说明和讲解，若您因此产生困惑，深感歉意，恳请谅解。<strong>如您希望使用翻译工具、AI工具、脚本、编辑平台、辅助插件、转码工具或其他编辑技术对本免责声明进行翻译、重写、解析或再处理，您有义务事先确认该工具本身的使用协议与 CC BY-NC-SA 4.0 协议不产生冲突</strong>，如发现协议冲突或限制传染性条款不兼容，<strong>请立即终止使用该工具，并彻底删除副本、缓存、快照、自动记录及所有衍生内容，并采取一切可行手段消除由此带来的影响</strong>，否则后果自负，本人不承担任何衍生法律风险。</div>
+  <div class="page">
+    <div class="header">免责声明与使用协议</div>
 
-  <div class="notice">
-<strong>继续访问、阅读、引用、评论、转发、或与我互动，即表示您完全理解并接受上述全部免责声明条款。如您不同意，请立即关闭页面，终止一切行为。</strong>
+    <div class="section">
+      <div class="section-title">一、适用范围与版本信息</div>
+      本免责声明适用于以下官方页面地址的原始发布版本：<br>
+      <em>mzsm.pages.dev</em>、<em>mzsm.obanarchy.org</em>、<em>tos.obanarchy.org</em>。<br><br>
+      当前版本：v6.0<br>
+      发布日期：2025年4月10日18:41（Unix 时间戳：1744324869）<br>
+      请注意：由于页面使用 Cloudflare CDN 进行全球节点部署，内容实际生效时间可能因缓存、传播延迟而略有偏移。<br><br>
+      如因网络原因（如国家防火墙 GFW 拦截）导致您无法访问本页面，建议使用镜像站点或访问可用的最新缓存版本。如有疑问，请通过可信渠道留言或提交反馈。
+    </div>
+
+    <div class="section">
+      <div class="section-title">二、内容性质与责任界定</div>
+      本人在此声明：我所发表的一切文字、评论、观点、推理、假设、描述、比喻及任何其他表达，仅为特定语境下的个人主观思想输出，不具备任何官方性质，亦不构成任何形式的政策建议、法律咨询、专业意见或公共立场表达。<br><br>
+      本人当前居住海外，所有言论目的限于学习、研究与自我记录，严格遵守中华人民共和国法律法规，坚定支持国家统一与宪政秩序。
+    </div>
+
+    <div class="section">
+      <div class="section-title">三、表达局限与信息准确性</div>
+      本人认知水平有限，表达能力存在缺陷，可能出现语病、错字、上下文脱节、逻辑跳跃、时间错乱、比喻混乱、信息遗漏等情况。任何因表述不当引起的误读、误判或争议，应视为理解偏差而非主观攻击行为。<br><br>
+      本人保留随时修正、撤回或否定任何以我名义发布的历史性文字内容的权利。
+    </div>
+
+    <div class="section">
+      <div class="section-title">四、心理状态与特殊情况说明</div>
+      本人在个别时间节点可能因睡眠、压力、健康状况、信息过载等外部或内部影响导致言语风格发生变化。部分言论可能表现为高度情绪化、表达逻辑不连贯、观点转移迅速、修辞结构崩解等特征。此类内容不具任何攻击性意图，也不代表理性思维状态下的立场陈述，阅读者应综合语境理性判断。
+    </div>
+
+    <div class="section">
+      <div class="section-title">五、法律责任与免责条款</div>
+      本人不具备赔偿能力，对任何由于阅读、误读、引用、转发、改写本页面内容而产生的直接、间接、附带性、连带性后果不承担任何责任，包括但不限于名誉受损、法律纠纷、经济损失、账号处罚、人际冲突、精神困扰等。<br><br>
+      若您因误信、误判本声明而采取任何行为，后果请自负。
+    </div>
+
+    <div class="section">
+      <div class="section-title">六、转载、引用与演绎限制</div>
+      本页面内容禁止断章取义、编辑加工、设定标签、标题党渲染、构建他人对我立场的想象性诠释。<br><br>
+      所有引用需保持全文结构完整性，且注明来源及链接地址。若因断章取义引发误导传播或争议，本人保留不回应、不解释及必要时通过法律渠道维权的权利。
+    </div>
+
+    <div class="section">
+      <div class="section-title">七、平台适配性与展示准确性</div>
+      本页面使用系统内置字体（如 system-ui、Arial），未使用任何商业版权字体，若因网络传输错误、CDN 缓存失效或浏览器兼容性差异导致字体替换为受版权保护字体，该问题属使用者个人浏览环境问题，与本人无关。
+    </div>
+
+    <div class="section">
+      <div class="section-title">八、开源软件声明</div>
+      本人所发布的所有开源项目与本免责声明一致，仅代表发布当时本人对问题的非商业性技术回应。其代码、设计、注释、文档、发布页等均可能包含不完整、不稳定或未经充分测试的内容，使用者请自行承担使用后果。<br><br>
+      本人不对任何因使用本开源代码产生的直接或间接技术故障、安全问题、数据丢失或其他后果承担责任，也无法对您使用本软件或其衍生版本之后所产生的行为负责。<br><br>
+      所有开源项目原则上优先采用宽松协议（如 MIT / Apache-2.0 / CC BY-NC-SA），除非在对应项目页面中明确说明更严格的许可条件。请在使用前仔细阅读具体项目的 LICENSE 文件，若存在协议冲突，以 LICENSE 文件中条款为准。
+    </div>
+
+    <div class="section">
+      <div class="section-title">九、协议复制与分发要求</div>
+      若您希望合法保留或转发本免责声明，请在遵守 CC BY-NC-SA 4.0 协议的前提下完整转载并注明出处，不得修改条款结构、隐藏版本信息或伪造作者声明。<br><br>
+      复制行为即视为您已知晓并接受本页面之约定。
+    </div>
+
+    <div class="section">
+      <div class="section-title">十、跨平台声明条款适配</div>
+      若本人内容出现在其他平台（如内容网站、社交平台、论坛等），并受该平台用户协议、社区规范等条款管辖时，则以本人声明与该平台协议中<strong>更严格的一方</strong>为准。<br><br>
+      平台方如设有解释权，应承担争议解释与内容展示的责任。
+    </div>
+
+    <div class="section">
+      <div class="section-title">十一、免责声明的阅读建议</div>
+      本文结构复杂、长度冗长、表达密度高，不建议在疲劳、情绪不稳、注意力涣散状态下阅读。<br><br>
+      若您因认知限制、感官障碍、语言理解力不足等因素，无法完整解读本协议内容，建议委托值得信赖之他人协助阅读，或使用在 CC BY-NC-SA 4.0 许可下运行的、拥有明确开源或非商业声明的人工智能工具协助解释。<br><br>
+      如因使用未授权或闭源分析工具所产生的信息误读、理解错误、翻译失真等后果，由使用者自行负责。
+    </div>
+
+    <div class="notice">
+      <strong>继续访问、阅读、评论、转发、引用或与我进行任何形式的互动，即视为您已完整阅读并接受本免责声明中全部条款。若您不同意，请立即关闭页面并中止一切传播行为。</strong>
+    </div>
+
+    <div class="footer">
+      文本由本站匿名作者创作与维护，页面内容基于 CC BY-NC-SA 4.0 协议开放发布，任何引用、衍生或传播需在遵守许可条款前提下进行，禁止商业用途，保留必要法律解释权。
+    </div>
   </div>
 </body>
 </html>
